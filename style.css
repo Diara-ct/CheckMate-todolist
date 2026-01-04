@@ -10,583 +10,229 @@ html, body {
 }
 
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .background {
-    position: fixed;
-    inset: 0;
-    z-index: -1;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
 }
 
 .background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.489);
-    max-width: 1152px;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 20px 20px 0 20px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-.frame {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: rgba(255, 255, 255, 0.49);
+  width: 100%;
+  max-width: 1152px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px 20px 0 0;
+  padding: 0 20px;
 }
 
 .logo {
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    position: relative;
-    bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .logo img {
-    width: 50px;
-    position: relative;
-    left: 50px;
+  width: 50px;
 }
 
 .logo p {
-    font-size: 20px;
-    font-weight: 600;
-    position: relative;
-    bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .button {
-    background-color: #c3c3c38d;
-    width: 127px;
-    height: 31px;
-    border-radius: 8px;
-    padding-top: 2px;
-    box-shadow: 0 2px 2px 2px #101010;
-    position: relative;
-    right: 20px;
+  background-color: #c3c3c38d;
+  width: 127px;
+  height: 31px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px #101010;
 }
 
 .button a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 15px;
-    text-decoration: none;
-    color: #101010;
-    font-weight: 500;
-    padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  color: #101010;
+  font-weight: 500;
 }
 
-.button :hover {
-    background-color: #9b9b9bbd;
-    padding: 5px 0;
-    border-radius: 8px;
-    position: relative;
-    bottom: 2px;
-    color: rgb(98, 49, 144);
+.button:hover {
+  background-color: #9b9b9bbd;
 }
 
 .text-accueil {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 1.5px;
-    line-height: 2px;
-    margin: 60px 0;
-}
-
-.text-accueil p {
-    color: #595959;
-    font-size: 20px;
-    font-weight: 300;
+  text-align: center;
+  margin: 60px 0;
 }
 
 .text-accueil h4 {
-    font-size: 36px;
-    font-weight: 600;
+  font-size: 36px;
+  font-weight: 600;
 }
 
-.box-mail {
-    background-color: #e3dff690;
-    height: 257px;
-    width: 100%;
-    max-width: 841px;
-    border: solid 4px #ffff;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: #ffff 2px 2px 15px 6px;
-    gap: 30px;
-}
-
-.box-mail input {
-    text-decoration: none;
-    width: 761px;
-    height: 48px;
-    border-radius: 20px;
-    border: solid 0.5px;
-    font-size: 20px;
-    font-weight: 500;
-    padding-left: 25px;
-}
-
-#btn-valider-inscription {
-    width: 234px;
-    height: 52px;
-    border: solid 0.5px;
-    border-radius: 0 20px 20px 0px;
-    background: linear-gradient(180deg, #B160DD, #4D4AAF);
-    font-weight: 500;
-    font-size: 20px;
-    position: absolute;
-    right: 350px;
-    cursor: pointer;
-}
-
-#btn-valider-inscription a {
-    text-decoration: none;
-    color: #ffff;
-}
-
-#btn-valider-inscription:hover {
-    background: linear-gradient(180deg, #A31E20, #7D27AB);
-    width: 234px;
-    height: 52px;
-    border: solid 0.5px;
-    border-radius: 0 20px 20px 0px;
-}
-
-.box-text-mail {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-}
-
-#text-mail {
-    line-height: 2px;
-    color: #2e2e2e98;
-    font-size: 20px;
-    letter-spacing: 1.5px;
-}
-
-#text-mail a {
-    text-decoration: none;
-    color: #2e2e2e98;
-    font-weight: 600;
-}
-
-.icons {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
-    font-weight: 300;
-}
-
-.box-mail1 {
-    background-color: #e3dff690;
-    height: 327px;
-    width: 100%;
-    max-width: 841px;
-    border: solid 4px #ffff;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: #ffff 2px 2px 15px 6px;
-    margin-top: 100px;
-}
-
-
-#btn-commencer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 234px;
-    height: 52px;
-    border: solid 0.5px;
-    border-radius: 20px;
-    background: linear-gradient(180deg, #B160DD, #4D4AAF);
-    font-weight: 500;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-#btn-commencer a {
-    text-decoration: none;
-    color: #ffff;
-}
-
-#btn-commencer:hover {
-    background: linear-gradient(180deg, #A31E20, #7D27AB);
-    width: 234px;
-    height: 52px;
-    border: solid 0.5px;
-    border-radius: 20px;
-}
-
-#text-mail1 {
-    line-height: 2px;
-    color: #101010;
-    font-size: 20px;
-    letter-spacing: 1.5px;
-    font-weight: 300;
-    margin-bottom: 30px;
-}
-
-#text-mail1 a {
-    text-decoration: none;
-    color: #101010;
-    font-weight: 500;
-}
-
-.card-mail1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 60px;
-    font-weight: 500;
-    margin-top: 40px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffff;
-    width: 220px;
-    height: 155px;
-    border-radius: 20px;
-}
-
-.mini-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #E16E70;
-    border-radius: 10px;
-    width: 55px;
-    height: 50px;
-}
-
-.mini-card0 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #8885E9;
-    border-radius: 10px;
-    width: 55px;
-    height: 50px;
-}
-
-.mini-card1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #E3AD76;
-    border-radius: 10px;
-    width: 55px;
-    height: 50px;
-}
-
-.taches {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-   
+.text-accueil p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #595959;
+  margin-top: 10px;
 }
 
 .text-accueil2 {
-    font-size: 28px;
-    font-weight: 600;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.box-mail,
+.box-mail1,
+.box-mail2,
+.box-mail3 {
+  background-color: #e3dff690;
+  border: 4px solid #fff;
+  border-radius: 15px;
+  box-shadow: #fff 2px 2px 15px 6px;
+  width: 100%;
+}
+
+.box-mail {
+  max-width: 841px;
+  height: 257px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box-mail input {
+  width: 90%;
+  height: 48px;
+  border-radius: 20px;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+#btn-valider-inscription,
+#btn-ajouter,
+#btn-commencer,
+#btn-enregistrer,
+#btn-retour {
+  background: linear-gradient(180deg, #B160DD, #4D4AAF);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#btn-valider-inscription,
+#btn-ajouter {
+  width: 234px;
+  height: 52px;
+  border-radius: 20px;
+}
+
+#btn-valider-inscription:hover,
+#btn-ajouter:hover,
+#btn-commencer:hover,
+#btn-enregistrer:hover,
+#btn-retour:hover {
+  background: linear-gradient(180deg, #A31E20, #7D27AB);
+}
+
+.taches {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .box-mail2 {
-    background-color: #e3dff690;
-    height: 498px;
-    width: 100%;
-    max-width: 1051px;
-    border: solid 4px #ffff;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-shadow: #ffff 2px 2px 15px 6px;
-    margin-top: 100px;
-    gap: 120px;
+  max-width: 1051px;
+  height: auto;
+  padding: 40px 20px;
 }
 
 .box-mail2-1 {
-    background-color: #e3dff690;
-    height: 100px;
-    width: 670px;
-    border: solid 4px #ffff;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-shadow: #ffff 2px 2px 15px 6px;
-    margin-top: 30px;
+  width: 100%;
+  max-width: 670px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .box-mail2-1 input {
-    text-decoration: none;
-    width: 587px;
-    height: 48px;
-    border-radius: 20px;
-    border: solid 0.5px;
-    font-size: 20px;
-    font-weight: 500;
-    padding-left: 25px;
+  flex: 1;
+  height: 48px;
+  border-radius: 20px;
+  padding-left: 20px;
 }
 
-#btn-ajouter {
-    width: 204px;
-    height: 51px;
-    border: solid 0.5px;
-    border-radius: 0 20px 20px 0px;
-    background: linear-gradient(180deg, #B160DD, #4D4AAF);
-    font-weight: 500;
-    font-size: 20px;
-    position: absolute;
-    right: 440px;
-    cursor: pointer;
+footer {
+  margin-top: 60px;
+  text-align: center;
 }
 
-#btn-ajouter a {
-    text-decoration: none;
-    color: #ffff;
-}
-
-#btn-ajouter:hover {
-    background: linear-gradient(180deg, #A31E20, #7D27AB);
-    width: 204px;
-    height: 51px;
-    border: solid 0.5px;
-    border-radius: 0 20px 20px 0px;
-}
-
-#logo1 img{
-    width: 72px;
-    object-fit: cover;
-}
-
-.box-mail3 {
-    background-color: #e3dff690;
-    height: 480px;
-    width: 100%;
-    max-width: 786px;
-    border: solid 4px #ffff;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: #ffff 2px 2px 15px 6px;
-    margin-top: 80px;
-}
-
-.box-mail3 input::placeholder{
-    position: relative;
-    left: 10px;
-}
-
-.box-mail3-1 input{
-    width: 627px;
-    height: 53px;
-    border-radius: 5px;
-    border: solid #101010 0.5px;
-    background-color: #ffff;
-    color: #000000b0 ;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.box-mail3-2 input{
-    width: 627px;
-    height: 112px;
-     border-radius: 5px;
-    border: solid #101010 0.2px;
-    background-color: #ffff;
-    color: #000000b0 ;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-#btn-enregistrer {
-    width: 133px;
-    height: 31px;
-    border: solid 0.5px;
-    border-radius: 4px;
-    background: linear-gradient(180deg, #B160DD, #4D4AAF);
-    font-weight: 500;
-    font-size: 16px;
-    cursor: pointer;
-    position: relative;
-    top: 30px;
-    left: 250px;
-}
-
-#btn-enregistrer a {
-    text-decoration: none;
-    color: #ffff;
-}
-
-#btn-retour{
-    width: 273px;
-    height: 49px;
-    border: solid 0.5px;
-    border-radius: 4px;
-    background: linear-gradient(180deg, #B160DD, #4D4AAF);
-    font-weight: 500;
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: 40px;
-}
-
-#btn-retour a {
-    text-decoration: none;
-    color: #ffff;
-}
-
-#btn-enregistrer:hover {
-    background: linear-gradient(180deg, #A31E20, #7D27AB);
-    width: 133px;
-    height: 32px;
-    border: solid 0.5px;
-    border-radius: 0 20px 20px 0px;
-}
-
-
-#btn-retour:hover {
-    background: linear-gradient(180deg, #A31E20, #7D27AB);
-    width: 273px;
-    height: 50px;
-    border: solid 0.5px;
-    border-radius: 0 20px 20px 0px;
-}
-
-
-@media (max-width: 768px) {
-
-  header {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .frame {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .box-mail input {
-    width: 100%;
-  }
-
-  .box-mail button {
-    width: 100%;
-  }
-
-  h1, h2, h3 {
-    text-align: center;
-  }
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 @media (max-width: 480px) {
 
   header {
-    width: 100%;
+    flex-direction: column;
     height: auto;
-    padding: 1rem;
-  }
-
-  .logo {
     gap: 10px;
   }
 
-  .logo img {
-    left: 0;
+  .text-accueil h4 {
+    font-size: 24px;
+  }
+
+  .text-accueil p {
+    font-size: 16px;
   }
 
   .box-mail,
   .box-mail1,
   .box-mail2,
   .box-mail3 {
-    width: 100%;
-    padding: 1rem;
+    width: 90%;
     height: auto;
-  }
-
-  .box-mail input,
-  .box-mail2-1 input,
-  .box-mail3 input {
-    width: 100%;
+    padding: 20px;
   }
 
   #btn-valider-inscription,
   #btn-ajouter {
-    position: static;
     width: 100%;
-    margin-top: 10px;
-    border-radius: 20px;
-  }
-
-  .text-accueil h4 {
-    font-size: 24px;
-    text-align: center;
-  }
-
-  .text-accueil p {
-    font-size: 16px;
-    text-align: center;
   }
 
   footer {
@@ -594,56 +240,20 @@ footer {
   }
 }
 
-
-
-
-
-
 @font-face {
-    font-family: 'Poppins';
-    src: url(poppins_family/Poppins-Medium.ttf) format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'Poppins';
+  src: url(poppins_family/Poppins-Regular.ttf);
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url(poppins_family/Poppins-SemiBold.ttf) format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-family: 'Poppins';
+  src: url(poppins_family/Poppins-Medium.ttf);
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url(poppins_family/Poppins-Black.ttf) format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url(poppins_family/Poppins-Bold.ttf) format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url(poppins_family/Poppins-ExtraBold.ttf) format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url(poppins_family/Poppins-Regular.ttf) format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url(poppins_family/Poppins-Light.ttf) format('truetype');
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'Poppins';
+  src: url(poppins_family/Poppins-SemiBold.ttf);
+  font-weight: 600;
 }
