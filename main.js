@@ -1,14 +1,9 @@
-/* =========================
-   VALIDATION EMAIL
-========================= */
-
+/*validation de l'email*/
 function emailValide(email) {
   return email.includes("@") && email.endsWith(".com");
 }
-/* =========================
-   CONNEXION / INSCRIPTION
-========================= */
 
+/*connexion et inscription*/
 const btnConnexion = document.getElementById("btn-valider-inscription");
 const inputEmail = document.querySelector("input[type='email']");
 
@@ -21,17 +16,13 @@ if (btnConnexion && inputEmail) {
       return;
     }
 
-    // Sauvegarde de l'email
     localStorage.setItem("userEmail", email);
 
-    // Redirection vers les tâches
     window.location.href = "taches.html";
   });
 }
-/* =========================
-   AUTO-CONNEXION
-========================= */
 
+/*connexion-automatiquue*/
 const emailSauvegarde = localStorage.getItem("userEmail");
 
 if (
@@ -42,19 +33,8 @@ if (
   window.location.href = "taches.html";
 }
 
-
-
-
-
-/* =========================
-   VARIABLES GLOBALES
-========================= */
-
-// récupérer les tâches stockées ou tableau vide
+/* ajout et stockage des taches*/
 let taches = JSON.parse(localStorage.getItem("taches")) || [];
-/* =========================
-   AJOUT D'UNE TÂCHE
-========================= */
 
 const btnEnregistrer = document.getElementById("btn-enregistrer");
 
@@ -79,10 +59,8 @@ if (btnEnregistrer) {
     localStorage.setItem("taches", JSON.stringify(taches));
   });
 }
-/* =========================
-   AFFICHAGE DES TÂCHES
-========================= */
 
+/*taches.html*/
 const listeTaches = document.getElementById("liste-taches");
 
 if (listeTaches) {

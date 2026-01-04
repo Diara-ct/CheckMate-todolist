@@ -476,8 +476,17 @@ footer {
 
 #btn-enregistrer:hover {
     background: linear-gradient(180deg, #A31E20, #7D27AB);
-    width: 204px;
-    height: 51px;
+    width: 133px;
+    height: 32px;
+    border: solid 0.5px;
+    border-radius: 0 20px 20px 0px;
+}
+
+
+#btn-retour:hover {
+    background: linear-gradient(180deg, #A31E20, #7D27AB);
+    width: 273px;
+    height: 50px;
     border: solid 0.5px;
     border-radius: 0 20px 20px 0px;
 }
