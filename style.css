@@ -36,7 +36,8 @@ section {
 
 header {
     background-color: rgba(255, 255, 255, 0.489);
-    width: 1152px;
+    max-width: 1152px;
+    width: 100%;
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -136,7 +137,8 @@ img {
 .box-mail {
     background-color: #e3dff690;
     height: 257px;
-    width: 841px;
+    width: 100%;
+    max-width: 841px;
     border: solid 4px #ffff;
     border-radius: 15px;
     display: flex;
@@ -223,7 +225,8 @@ footer {
 .box-mail1 {
     background-color: #e3dff690;
     height: 327px;
-    width: 841px;
+    width: 100%;
+    max-width: 841px;
     border: solid 4px #ffff;
     border-radius: 15px;
     display: flex;
@@ -347,7 +350,8 @@ footer {
 .box-mail2 {
     background-color: #e3dff690;
     height: 498px;
-    width: 1051px;
+    width: 100%;
+    max-width: 1051px;
     border: solid 4px #ffff;
     border-radius: 15px;
     display: flex;
@@ -418,7 +422,8 @@ footer {
 .box-mail3 {
     background-color: #e3dff690;
     height: 480px;
-    width: 786px;
+    width: 100%;
+    max-width: 786px;
     border: solid 4px #ffff;
     border-radius: 15px;
     display: flex;
@@ -534,6 +539,61 @@ footer {
     text-align: center;
   }
 }
+
+@media (max-width: 480px) {
+
+  header {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .logo {
+    gap: 10px;
+  }
+
+  .logo img {
+    left: 0;
+  }
+
+  .box-mail,
+  .box-mail1,
+  .box-mail2,
+  .box-mail3 {
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .box-mail input,
+  .box-mail2-1 input,
+  .box-mail3 input {
+    width: 100%;
+  }
+
+  #btn-valider-inscription,
+  #btn-ajouter {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+
+  .text-accueil h4 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .text-accueil p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 30px;
+  }
+}
+
 
 
 
