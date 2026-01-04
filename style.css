@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -34,6 +45,13 @@ header {
     border-top-right-radius: 20px;
     padding: 20px 20px 0 20px;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 .frame {
     display: flex;
@@ -489,6 +507,32 @@ footer {
     height: 50px;
     border: solid 0.5px;
     border-radius: 0 20px 20px 0px;
+}
+
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .frame {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .box-mail input {
+    width: 100%;
+  }
+
+  .box-mail button {
+    width: 100%;
+  }
+
+  h1, h2, h3 {
+    text-align: center;
+  }
 }
 
 
